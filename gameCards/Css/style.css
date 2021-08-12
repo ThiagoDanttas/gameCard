@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    font-size: 18pt;
+    background-color: #333;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    width: 100vw;
+    height: 6em;
+    line-height: 7em;
+    text-align: center;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin: 450px;
+    display: flex;
+    position: absolute;
+}
+
+.box {
+    width: 230px;
+    height:330px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #8257e6, rgba(130, 87, 230, .25));
+    box-shadow: 5px 5px 15px 5px #241150;
+    cursor: pointer;
+    margin: 0 30px 0px 0px;
+    margin-top: 15%;
+}
+
+.box:hover, button:hover {
+    box-shadow: 5px 5px 10px 5px #179759;
+    transition: .5s;
+}
+
+i {
+    color: #79bda6;
+    font-size: 2.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    max-width: 100vw;
+    max-height: 150px;
+    text-align: center;
+    margin: -15px auto;
+    font-family: 'Baloo 2';
+    color: #43977A;
+}
+
+h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .9s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* === button === */
+
+button {
+    background: linear-gradient(90deg, #8257e6, rgba(130, 87, 230, .25));
+    width: 230px;
+    height: 330px;
+    color: #3e705f;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 15px 5px #241150;
+    cursor: pointer;
+    margin-top: -50px;
+    margin-left: 0;
+    opacity: 0;
+}
