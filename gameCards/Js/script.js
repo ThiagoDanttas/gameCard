@@ -15,7 +15,7 @@ let cardOne = document.getElementById("card-01");
 
 function loadOfGame() {
   // txtHeader
-  txtHeader.style.marginTop = "60px";
+  txtHeader.style.marginTop = "40px";
   txtHeader.style.transition = "3s";
   //playBtn
   playBtn.style.opacity = "100";
@@ -25,7 +25,7 @@ function loadOfGame() {
 function start() {
   let box = document.getElementById("sectionBox");
   // Box
-  box.style.margin = "-120px";
+  box.style.margin = "-8em";
   box.style.transition = "2.5s";
   // txtHeader
   txtHeader.innerHTML = "Where is the joke card ?";
